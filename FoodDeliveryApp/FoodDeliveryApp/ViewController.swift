@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Hello world"
-        label.font = UIFont.boldSystemFont(ofSize: 40)
-        label.textColor = .white 
+        label.font = .Roboto.thinItalic.size(of: 40)
+        label.textColor = .white
         view.addSubview(label)
         
         NSLayoutConstraint.activate([
