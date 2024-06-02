@@ -2,7 +2,20 @@
 //  OrderCoordinator.swift
 //  FoodDeliveryApp
 //
-//  Created by Kaspi on 02.06.2024.
+//  Created by lukoom on 02.06.2024.
 //
 
-import Foundation
+import UIKit
+
+class OrderCoordinator: Coordinator {
+    
+    override func start() {
+        let vc = ViewController()
+        vc.view.backgroundColor = .blue
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    override func finish() {
+        print("finish")
+    }
+}
